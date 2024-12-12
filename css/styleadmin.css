@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.nav_bar {
+  background-color: #000000;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav_bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_bar ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav_bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav_bar ul li a:hover {
+  background-color: #555;
+  color: #ddd;
+}
+
+.main_content {
+  display: flex;
+  min-height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form_addCate {
+  width: 35%;
+}
+.form_addCate_item {
+  position: relative;
+}
+.form_addCate table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+a.btn.btn-success {
+  background-color: #3993a4;
+  border: none;
+}
+a.btn.btn-success:hover {
+  background-color: #000000;
+}
+a.btn.btn-info {
+  background-color: #39a466;
+  border: none;
+}
+a.btn.btn-info:hover {
+  background-color: #000000;
+}
+
+.form_addCate th,
+.form_addCate td {
+  padding: 12px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.form_addCate th {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+}
+
+.form_addCate input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form_addCate button {
+  padding: 8px 16px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form_addCate button:hover {
+  background-color: #4b9abf;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list_category {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+.list_category {
+  min-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.list_category table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list_category th,
+.list_category td {
+  padding: 8px;
+  text-align: left;
+  border: 1px dashed #f0f0f0;
+}
+.list_category th {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  z-index: 1;
+}
+.list_category tr td a:hover {
+  color: #e91e63;
+  transition: inherit;
+}
+/* ----------------- */
+h2 {
+  color: #333;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+/* Header của card */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-header .btn {
+  font-size: 1rem;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-header .btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.card-header .btn-success:hover {
+  background-color: #218838;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table thead {
+  background-color: #343a40;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  font-weight: bold;
+  text-align: center;
+}
+
+.table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Hình ảnh trong bảng */
+.table td img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Nút thao tác */
+.table .btn {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.table .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.table .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.table .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.table .btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Responsive bảng */
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+  }
+
+  .table img {
+    max-width: 80px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header của card */
+.card-header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px;
+  font-weight: bold;
+}
+
+/* Phần body của card */
+.card-body {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Form nhóm */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Input & select styling */
+.form-control,
+.form-control-file,
+select {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Khoảng cách giữa các nhóm */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Nút Thêm Sản Phẩm */
+button.btn-success {
+  background-color: #3e9eda;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-success:hover {
+  background-color: #000000;
+}
+
+/* Card căn giữa với khoảng cách từ phía trên */
+.mt-5 {
+  margin-top: 5rem !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Responsive chỉnh kích thước card */
+@media (max-width: 768px) {
+  .card {
+    width: 90% !important;
+  }
+}
+
+/* edit */
+/* Tổng thể form (kế thừa từ form thêm sản phẩm) */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-header>h1 {color: #000000;}
+.card-header {
+  background-color: #ffffff; /* Màu xanh khác để phân biệt */
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Form nhóm */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.form-control,
+.form-control-file,
+select {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Nút cập nhật */
+button.btn-success {
+  background-color: #17a2b8; /* Cùng màu với header */
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-success:hover {
+  background-color: #138496;
+}
+
+/* Hình ảnh hiện tại */
+.form-group img {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 100%;
+}
+
+/* Notifications */
+
+.hidden {
+  display: none;
+}
+#notification {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  background: #111b1c88;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateX(-10%);
+  z-index: 1000;
+}
+
+/* footer */
+.clear {
+  clear: both;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  color: #000000;
+}
+/* ----------- */
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.product-image {
+  flex: 0 0 300px; /* Chiều rộng cố định cho ảnh */
+  margin-right: 20px; /* Khoảng cách giữa ảnh và form */
+}
+
+.product-image img {
+  width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của khối */
+  height: auto;
+}
+
+.product-info {
+  flex: 1; /* Phần còn lại sẽ chiếm cho form */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-description {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button-secondary {
+  background-color: #2ecc71;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+
+

@@ -1,0 +1,25 @@
+/* Desktop lớn */
+@media (min-width: 1200px) {
+    /* CSS cho màn hình desktop lớn */
+  }
+  
+  /* Desktop thường */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* CSS cho màn hình desktop thường */
+  }
+  
+  /* Tablet ngang */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* CSS cho tablet ngang */
+  }
+  
+  /* Tablet dọc */
+  @media (min-width: 576px) and (max-width: 767px) {
+    /* CSS cho tablet dọc */
+  }
+  
+  /* Điện thoại di động */
+  @media (max-width: 575px) {
+    /* CSS cho màn hình điện thoại */
+  }
+  

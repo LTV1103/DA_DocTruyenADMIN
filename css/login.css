@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.form_login {
+  position: relative;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  animation: rgbGlow 3s infinite;
+}
+@keyframes rgbGlow {
+  0% {
+    box-shadow: 0 0 10px 5px red;
+  }
+  20% {
+    box-shadow: 0 0 10px 5px rgb(34, 219, 233);
+  }
+  40% {
+    box-shadow: 0 0 10px 5px green;
+  }
+  80% {
+    box-shadow: 0 0 10px 5px blue;
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgb(215, 4, 205);
+  }
+}
+
+.form_login p {
+  margin: 5px;
+  font-size: 30px;
+  color: #0099ff;
+}
+
+.form_login .box_login {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.box_username i,
+.box_pass i {
+  color: #888;
+  margin-right: 8px;
+}
+
+.box_username,
+.box_pass {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.box_username input,
+.box_pass input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #333;
+  flex: 1;
+}
+
+.box_submit input[type="submit"] {
+  background-color: #6edfe5c8;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  width: 50%;
+  border: 1px dashed;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.box_submit input[type="submit"]:hover {
+  background-color: #4ebbd3;
+}
